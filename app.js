@@ -74,6 +74,14 @@ function managerCreate(){
             message: "What's this manager's office phone number?"
         }
     ])
+    // add manager to array of employees
+    .then(({mgrName, mgrId, mgrEmail, mgrPhone}) => {
+        // use template to make manager object
+        const manager = new Manager(mgrName, mgrId, mgrEmail, mgrPhone);
+        employees.push(manager);
+//  call function to make next employee
+        newMember();
+    })
 }
 
 function engineerCreate(){
@@ -100,6 +108,13 @@ function engineerCreate(){
             message: "What's this engineer's github username?"
         }
     ])
+    .then(({engName, engId, engEmail, engGithub}) => {
+        // use template to make engineer object
+        const engineer = new Engineer(engName, engId, engEmail, engGithub);
+        employees.push(engineer);
+//  call function to make next employee
+        newMember();
+    })
 }
 
 function internCreate(){
@@ -126,6 +141,13 @@ function internCreate(){
             message: "What school is this intern studying at/graduated from?"
         }
     ])
+    .then(({intName, intId, intEmail, intSchool}) => {
+        // use template to make manager object
+        const intern = new Intern(intName, intId, intEmail, intSchool);
+        employees.push(intern);
+//  call function to make next employee
+        newMember();
+    })
 }
 
 // After the user has input all employees desired, call the `render` function (required
