@@ -54,7 +54,24 @@ function managerCreate(){
     inquirer
     .prompt([
         {
-        
+            type: "input",
+            name: "mgrName",
+            message: "What's this team manager's name?"        
+        },
+        {
+            type: "input",
+            name: "mgrId",
+            message: "What's this manager's ID number?"
+        },
+        {
+            type: "input",
+            name: "mgrEmail",
+            message: "What's this manager's e-mail address?"
+        },
+        {
+            type: "input",
+            name: "mgrOffNum",
+            message: "What's this manager's office phone number?"
         }
     ])
 }
@@ -63,7 +80,24 @@ function engineerCreate(){
     inquirer
     .prompt([
         {
-        
+            type: "input",
+            name: "engName",
+            message: "What's this engineer's name?"        
+        },
+        {
+            type: "input",
+            name: "engId",
+            message: "What's this engineer's ID number?"
+        },
+        {
+            type: "input",
+            name: "engEmail",
+            message: "What's this engineer's e-mail address?"
+        },
+        {
+            type: "input",
+            name: "engGithub",
+            message: "What's this engineer's github username?"
         }
     ])
 }
@@ -72,7 +106,24 @@ function internCreate(){
     inquirer
     .prompt([
         {
-        
+            type: "input",
+            name: "intName",
+            message: "What's this intern's name?"        
+        },
+        {
+            type: "input",
+            name: "intId",
+            message: "What's this intern's ID number?"
+        },
+        {
+            type: "input",
+            name: "intEmail",
+            message: "What's this intern's e-mail address?"
+        },
+        {
+            type: "input",
+            name: "intSchool",
+            message: "What school is this intern studying at/graduated from?"
         }
     ])
 }
