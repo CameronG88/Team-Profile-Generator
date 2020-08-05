@@ -41,7 +41,7 @@
   John Dinsmore, Jorge Alvarez
 
   ## Tests
- This project passed all 17 tests prior to building application.
+ This project passed all 4 tests prior to building application.
 
   ## Contribute
   You can contribute by committing or commentting to the project in github using the link above.
