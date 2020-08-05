@@ -1,0 +1,39 @@
+.jumbotron {
+background-color: rgba(63, 63, 63, 0.8);
+color: whitesmoke;
+font-family: 'Ubuntu', sans-serif;
+}
+h1 {
+    font-size: 60px;
+}
+
+.mgr-head {
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.eng-head {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+.int-head {
+    background-color: rgba(50, 114, 209, 0.8);
+}
+
+
+.card-title {
+    text-align: center;
+}
+
+.card {
+    background-color: rgba(128, 128, 128, 0.8);
+    margin: 4px;
+    
+}
+
+body {
+    background: url(./images/computercloud.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
